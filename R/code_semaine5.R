@@ -99,7 +99,7 @@ plot_code_professions <- function(df){
     barplot(
       table(df_Maire$`Code de la catégorie socio professionnelle`),
       horiz = TRUE,
-      xlab = "frqc d'apparition d'élu de la catégorie socio",
+      xlab = "fréquence d'apparition d'élu de la catégorie socio",
       ylab = "code catégorie socio",
       main = paste("Département:", df[1, 2])
 
@@ -108,7 +108,19 @@ plot_code_professions <- function(df){
 
 }
 
-
+#' Résumé des informations d'une commune
+#'
+#' @description
+#' Cette fonction prend un dataframe représentant une commune et affiche un résumé des informations, y compris :
+#' - Le nombre d'élus
+#' - La distribution des âges
+#' - L'élu le plus âgé
+#'
+#' @param x data.frame représentant une commune.
+#' @return Aucune valeur retournée. La fonction affiche directement le résumé dans la console.
+#' @export
+#' @examples
+#' summary_commune(df_nantes)
 summary_commune <- function(x){
 
   if (length(table(x$`Libellé de la commune`)) != 1) {
