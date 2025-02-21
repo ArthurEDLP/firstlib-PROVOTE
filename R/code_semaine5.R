@@ -70,7 +70,12 @@ calcul_distribution_age <- function(df){
 
 }
 
-
+#' Une fonction pour avoir un graphique du nombre des différents codes professionels
+#'
+#' @return Renvoie un graphique en barre horizontal de la fréquence des différents codes professionels
+#' @description
+#' Prend en compte un data frame, ne garde que les élus et leurs codes pro puis renvoie un graphique en barre horizontal
+#' @param df data.frame d'une commune ou département
 
 plot_code_professions <- function(df){
 
