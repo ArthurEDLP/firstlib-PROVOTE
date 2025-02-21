@@ -1,9 +1,9 @@
 Package: libraryEDLP
-Title: What the Package Does (One Line, Title Case)
+Title: Descritpion des communes et départements
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+    person("Arthur", "Ernoul de la Provôté", , "arthur.adressemail@hotmail.fr", role = c("aut", "cre"))
+Description: Permet d'analyser et de résumer des données sur les élus d'une commune ou d'un département. Il importe plusieurs fonctions pour faire ressortir une série d'information issue du résumé d'un data frame et d'afficher des graphiques sur la distributions de la profession des élus.
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
 Encoding: UTF-8
