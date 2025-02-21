@@ -2,9 +2,10 @@
 #'
 #' @description
 #' Cette fonction prend en entrée un dataframe et renvoie le nombre d'adjoints présents dans ce dataframe.
-#' Elle s'assure que la colonne 'Libellé.de.la.fonction' existe avant de compter le nombre d'adjoints.
+#' Elle s'assure que la colonne 'Libellé de la fonction' existe avant de compter le nombre d'adjoints.
 #' @param df Un dataframe représentant une commune ou un département.
 #' @return Un entier correspondant au nombre d'adjoints dans le dataframe.
+
 compter_nombre_d_adjoints <- function(df){
 
   if (length(df) != 16) {
@@ -32,6 +33,7 @@ compter_nombre_d_adjoints <- function(df){
 #' de l'élu le plus âgé. Le dataframe doit contenir une colonne de dates de naissance au format 'dd/mm/yyyy'.
 #' @param df Un dataframe représentant une commune ou un département.
 #' @return Un vecteur avec le nom, prénom et la date de naissance de l'élu le plus âgé.
+
 trouver_l_elu_le_plus_age <- function(df){
 
   if (length(df) != 16) {
@@ -44,7 +46,12 @@ trouver_l_elu_le_plus_age <- function(df){
 
 }
 
-
+#' Une fonction pour avoir la distribution de l'âge dans un data.frame
+#'
+#' @return Renvoie un vecteur avec les différents quartiles de l'âge de mon df: 0%, 25%, 50%, 75%, 100%
+#' @description
+#' Prend en compte un data frame et renvoie les quartiles d'âge du df
+#' @param df data.frame d'une commune ou département
 
 calcul_distribution_age <- function(df){
 
