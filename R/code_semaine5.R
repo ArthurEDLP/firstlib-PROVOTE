@@ -370,3 +370,34 @@ usethis::use_test("creer_commune")
 usethis::use_test("creer_departement")
 
 
+# Projet ----
+
+generer_rapport <- function(commune, departement, output) {
+  quarto::quarto_render(
+    input = "inst/rapport.qmd", # Cherche le fichier rapport.qmd
+    output_format = "html",
+    output_file = output,  # Spécifie le chemin de sortie
+    execute_params = list(
+      "code_commune" = commune,
+      "code_departement" = departement
+    )
+  )
+}
+
+
+generer_rapport(44109, 32, "inst/rapport.html")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
