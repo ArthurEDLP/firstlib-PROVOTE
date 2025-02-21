@@ -1,0 +1,52 @@
+---
+title: "rapport.qmd"
+format: 
+  html:
+    code-fold: true
+author: "Arthur Ernoul de la Provôté"
+params:
+  code_commune: "44109"
+  nom_commune: "Nantes"
+  code_departement: "44"
+  nom_departement: "Loire-Atlantique"
+---
+# Chargement de la library semaine 5
+```{r}
+library(devtools)
+remotes::install_github("ArthurEDLP/firstlib-PROVOTE")
+library(libraryEDLP)
+```
+
+# Filtrage de donnée pour avoir une commune et un département
+```{r}
+df_commune <- subset(elus_data, elus_data$`Libellé de la commune` %in% params$nom_commune & elus_data$`Code de la commune` %in% params$code_commune)
+
+df_departement <- subset(elus_data, elus_data$`Libellé du département` %in% params$nom_departement)
+```
+ 
+# Résumé et graphique commune
+```{r}
+summary_commune(df_commune)
+plot_commune(df_commune)
+```
+
+# Résumé et graphique département
+```{r}
+summary_departement(df_departement)
+plot_departement(df_departement)
+```
+
+# Compiler le document dans la console
+```{r}
+# quarto::quarto_render(
+#   input = "rapport.qmd",
+#   output_format = "html",
+#   execute_params = list(
+#     "code_commune" = "44109",
+#     "nom_commune" = "Nantes",
+#     "code_departement" = "32",
+#     "nom_departement" = "Gers"
+#   )
+# )
+```
+
