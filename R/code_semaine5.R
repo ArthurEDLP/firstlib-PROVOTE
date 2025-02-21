@@ -1,3 +1,10 @@
+#' Compter le nombre d'adjoints dans un dataframe
+#'
+#' @description
+#' Cette fonction prend en entrée un dataframe et renvoie le nombre d'adjoints présents dans ce dataframe.
+#' Elle s'assure que la colonne 'Libellé.de.la.fonction' existe avant de compter le nombre d'adjoints.
+#' @param df Un dataframe représentant une commune ou un département.
+#' @return Un entier correspondant au nombre d'adjoints dans le dataframe.
 compter_nombre_d_adjoints <- function(df){
 
   if (length(df) != 16) {
