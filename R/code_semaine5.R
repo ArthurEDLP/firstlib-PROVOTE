@@ -358,3 +358,13 @@ creer_departement <- function(df){
   return(df)
 }
 
+# tests ----
+
+library(testthat)
+
+usethis::use_test("summary_commune")
+usethis::use_test("summary_departement")
+usethis::use_test("plot_commune")
+usethis::use_test("plot_departement")
+usethis::use_test("creer_commune")
+usethis::use_test("creer_departement")
