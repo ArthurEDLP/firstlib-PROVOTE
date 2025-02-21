@@ -25,7 +25,13 @@ compter_nombre_d_adjoints <- function(df){
 }
 
 
-
+#' Trouver l'élu le plus âgé dans un dataframe
+#'
+#' @description
+#' Cette fonction prend en entrée un dataframe et renvoie les informations (nom, prénom et date de naissance)
+#' de l'élu le plus âgé. Le dataframe doit contenir une colonne de dates de naissance au format 'dd/mm/yyyy'.
+#' @param df Un dataframe représentant une commune ou un département.
+#' @return Un vecteur avec le nom, prénom et la date de naissance de l'élu le plus âgé.
 trouver_l_elu_le_plus_age <- function(df){
 
   if (length(df) != 16) {
