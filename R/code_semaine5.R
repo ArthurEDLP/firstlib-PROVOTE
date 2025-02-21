@@ -320,6 +320,14 @@ plot_departement <- function(df){
 
 }
 
+#' Création d'un objet de classe Commune
+#'
+#' @description
+#' Vérifie que le data frame ne contient qu'une seule commune avant de lui attribuer la classe "Commune".
+#'
+#' @param df Un data frame contenant les informations d'une commune.
+#' @return Un data frame avec la classe "Commune".
+#' @export
 creer_commune <- function(df){
   if (length(table(df$`Libellé de la commune`)) != 1) {
     stop("L'objet doit contenir 1 commune unique")
@@ -329,6 +337,14 @@ creer_commune <- function(df){
   return(df)
 }
 
+#' Création d'un objet de classe Département
+#'
+#' @description
+#' Vérifie que le data frame ne contient qu'un seul département avant de lui attribuer la classe "Département".
+#'
+#' @param df Un data frame contenant les informations d'un département.
+#' @return Un data frame avec la classe "Département".
+#' @export
 creer_departement <- function(df){
   if (length(table(df$`Libellé du département`)) != 1) {
     stop("L'objet doit contenir 1 département unique")
