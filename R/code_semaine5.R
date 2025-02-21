@@ -120,7 +120,7 @@ plot_code_professions <- function(df){
 #' @return Aucune valeur retournée. La fonction affiche directement le résumé dans la console.
 #' @export
 #' @examples
-#' summary_commune(df_nantes)
+#' summary_commune(df_Nantes)
 summary_commune <- function(x){
 
   if (length(table(x$`Libellé de la commune`)) != 1) {
@@ -148,7 +148,20 @@ summary_commune <- function(x){
   cat("Nom et âge de l'élu le plus ancien: ",nom_vieux, age_vieux,"ans", "\n", "\n")
 }
 
-
+#' Résumé des informations d'un département
+#'
+#' @description
+#' Cette fonction prend un dataframe représentant un département et affiche un résumé des informations, y compris :
+#' - Le nombre de communes
+#' - Le nombre d'élus
+#' - La distribution des âges
+#' - Les élus les plus jeunes et les plus âgés
+#'
+#' @param x data.frame représentant un département.
+#' @return Aucune valeur retournée. La fonction affiche directement le résumé dans la console.
+#' @export
+#' @examples
+#' summary_departement(df_Gers)
 summary_departement <- function(x){
 
   if (length(table(x$`Libellé de la commune`)) == 1) {
