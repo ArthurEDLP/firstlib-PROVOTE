@@ -235,7 +235,16 @@ summary_departement <- function(x){
 
 }
 
-
+#' Graphique des professions des élus d'une commune
+#'
+#' @description
+#' Génère un graphique en barres représentant la distribution des professions des élus d'une commune.
+#'
+#' @param df data.frame d'une commune.
+#' @return Un graphique en barres affichant les professions des élus.
+#' @export
+#' @examples
+#' plot_commune(df_Nantes)
 plot_commune <- function(df){
 
   if (length(df) < 16) {
@@ -267,7 +276,16 @@ plot_commune <- function(df){
 
 }
 
-
+#' Graphique des professions des élus d'un département
+#'
+#' @description
+#' Génère un graphique en barres représentant la distribution des professions des élus d'un département.
+#'
+#' @param df data.frame d'un département.
+#' @return Un graphique en barres affichant les professions des élus.
+#' @export
+#' @examples
+#' plot_departement(df_Gers)
 plot_departement <- function(df){
 
   if (length(df) < 16) {
