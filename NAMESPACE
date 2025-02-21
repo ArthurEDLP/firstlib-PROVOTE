@@ -2,7 +2,9 @@
 
 export(creer_commune)
 export(creer_departement)
+export(generer_rapport)
 export(plot_commune)
 export(plot_departement)
 export(summary_commune)
 export(summary_departement)
+import(quarto)
