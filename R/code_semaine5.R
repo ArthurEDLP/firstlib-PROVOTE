@@ -405,6 +405,5 @@ generer_rapport <- function(commune, departement, output) {
   )
 }
 
-
-
-
+library(libraryEDLP)
+generer_rapport(44109, 32, "rapport.html")

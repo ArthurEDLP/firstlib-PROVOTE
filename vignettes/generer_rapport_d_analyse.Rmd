@@ -1,6 +1,6 @@
 ---
 title: "Générer un rapport d'analyses"
-output: rmarkdown::html_vignette
+format: html
 vignette: >
   %\VignetteIndexEntry{Générer un rapport d'analyses}
   %\VignetteEngine{quarto::html}
