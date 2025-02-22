@@ -1,3 +1,7 @@
 ^LibraryEDLP\.Rproj$
 ^\.Rproj\.user$
 ^libraryEDLP\.Rproj$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^\.github$

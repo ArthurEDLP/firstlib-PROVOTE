@@ -36,15 +36,4 @@ summary_departement(df_departement)
 plot_departement(df_departement)
 ```
 
-# Compiler le document dans la console
-```{r}
-# quarto::quarto_render(
-#   input = "rapport.qmd",
-#   output_format = "html",
-#   execute_params = list(
-#     "code_commune" = "44109",
-#     "code_departement" = "32"
-#   )
-# )
-```
 

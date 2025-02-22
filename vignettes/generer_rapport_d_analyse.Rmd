@@ -1,0 +1,118 @@
+---
+title: "Générer un rapport d'analyses"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Générer un rapport d'analyses}
+  %\VignetteEngine{quarto::html}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+
+# Introduction
+
+Le package libraryEDLP permet d’analyser les données des élus français à travers plusieurs fonctions.
+
+Cette vignette détaille l’utilisation de trois fonctions  :
+
+📌 summary_commune(): pour obtenir un résumé des élus d’une commune.
+
+📌 summary_departement(): pour analyser les élus d’un département.
+
+📌 generer_rapport(): pour générer un rapport HTML complet avec Quarto.
+
+
+
+## Installation et Chargement du Package
+```{r setup}
+library(libraryEDLP)
+```
+
+
+# Résumé des Informations d’une Commune
+
+## Fonction summary_commune(df)
+
+La fonction summary_commune() permet d’obtenir un résumé des élus d’une commune.
+
+Elle affiche :
+
+- Le nom de la commune
+- Le nombre total d’élus
+- La distribution des âges des élus (par quartiles)
+- L’élu le plus âgé
+
+
+### Execution de summary_commune()
+```{r}
+
+# Exécution de la fonction pour un exemple
+summary_commune(df_Nantes)
+
+```
+
+**Interprétation des résultats :**
+
+- La commune étudiée est Nantes.
+- Il y a 27 élus dans cette commune.
+- L’élu le plus âgé est PROCHASSON , âgée de 72 ans.
+
+
+La fonction summary_commune() est par conséquent un outil permettant d’obtenir un résumé clair et détaillé des élus d’une commune.
+
+Elle permet une analyse rapide et visuelle des caractéristiques principales de la population élue locale.
+
+
+
+# Résumé des Informations d'un département
+
+## Fonction summary_departement(df)
+
+La fonction summary_departement() offre une vue d’ensemble des élus d’un département.
+
+Elle affiche :
+
+- Le nom du département
+- Le nombre total de communes
+- La distribution des âges des élus (par quartiles)
+- L’élu le plus âgé et l’élu le plus jeune
+
+### Exécution de summary_departement()
+
+```{r}
+
+# Exécution de la fonction pour un exemple
+summary_departement(df_Gers)
+
+```
+
+**Interprétation :**
+
+- Le département étudié est Loire-Atlantique.
+- Il contient 450 communes différentes.
+- L’élu le plus âgé est WEEVERS (92 ans).
+- L’élu le plus jeune est SENAC (23 ans).
+
+La fonction summary_departement() est un outil permettant d’analyser la répartition des élus dans un département.
+Elle permet une analyse rapide et détaillée sur le nombre de communes représentées et la structure démographique des élus.
+
+
+# Génération d’un Rapport Quarto
+
+## Fonction generer_rapport(commune, departement, output)
+
+La fonction generer_rapport() permet de générer un rapport interactif en HTML avec Quarto.
+
+Le rapport contiendra : 
+
+- Un résumé des élus de la commune et du département.
+- Des statistiques détaillées sur les élus.
+- Des graphiques pour illustrer les résultats.
+
+Le fichier rapport_commune.html sera généré et contiendra toutes les analyses.

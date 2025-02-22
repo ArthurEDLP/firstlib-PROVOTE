@@ -408,16 +408,3 @@ generer_rapport <- function(commune, departement, output) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
