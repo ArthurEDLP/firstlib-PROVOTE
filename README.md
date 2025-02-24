@@ -16,3 +16,4 @@ Il importe plusieurs fonctions pour faire ressortir une série d'information iss
 Se package comprend: 10 fonctions utiles à la descriptions et la génération de graphiques divers, 1 fonction pour générer un rapport quarto reprenants diverses fonctions, 1 base de donnée principal et 2 autres issue de la principal pour effectuer des exemples.
 
 conféré [les fonction et données](https://arthuredlp.github.io/firstlib-PROVOTE/reference/index.html)
+
