@@ -1,4 +1,6 @@
 url: https://arthuredlp.github.io/firstlib-PROVOTE/
 template:
   bootstrap: 5
-
+  bslib:
+    bootswatch: lux
+    pkgdown-nav-height: 100px
