@@ -3,7 +3,7 @@ pkgdown: 2.1.1
 pkgdown_sha: ~
 articles:
   generer_rapport_d_analyse: generer_rapport_d_analyse.html
-last_built: 2025-02-24T14:53Z
+last_built: 2025-02-26T10:05Z
 urls:
   reference: https://arthuredlp.github.io/firstlib-PROVOTE/reference
   article: https://arthuredlp.github.io/firstlib-PROVOTE/articles
