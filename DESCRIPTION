@@ -1,17 +1,18 @@
 Package: libraryEDLP
 Title: Descritpion des communes et départements
-Version: 0.0.0.9000
+Version: 0.0.1.2000
 Authors@R: 
     person("Arthur", "Ernoul de la Provôté", , "arthur.adressemail@hotmail.fr", role = c("aut", "cre"))
 Description: Permet d'analyser et de résumer des données sur les élus d'une commune ou d'un département. Il importe plusieurs fonctions pour faire ressortir une série d'information issue du résumé d'un data frame et d'afficher des graphiques sur la distributions de la profession des élus.
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+License:use_gpl3_license()
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 Depends: 
     R (>= 3.5)
 LazyData: true
+Imports:
+  quarto
 Suggests: 
     knitr,
     rmarkdown,
